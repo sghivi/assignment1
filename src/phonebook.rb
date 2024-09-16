@@ -25,6 +25,7 @@ class PhoneBook
         @list.each_key { |key|
             if (entry = @list[key])[1] && number.eql?(entry[0]) then return key end
         }
+        return nil
     end
 
     def namesByAc(areacode)
